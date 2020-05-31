@@ -1,0 +1,22 @@
+{
+  "name": "algotraiding",
+  "version": "1.0.0",
+  "description": "Сайт по Алготрейдингу",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZheniaAnfilatov/Algotraiding.git"
+  },
+  "author": "Zheka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZheniaAnfilatov/Algotraiding/issues"
+  },
+  "homepage": "https://github.com/ZheniaAnfilatov/Algotraiding#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
