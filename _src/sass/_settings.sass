@@ -5,9 +5,36 @@
   border: 0
   box-sizing: border-box
 html, body
+  font-family: "Roboto-Regular"
   font-size: 14px
+a
+  text-decoration: none
+  text-transform: uppercase
+img
+  max-width: 100%
 
 .container
   max-width: 1200px
   margin: 0 auto
-  padding: 0 30px
+  padding: 0 20px
+.button
+  padding: 1.05rem 2.8rem
+  border-radius: 4px
+  font-weight: 700
+  &__primary
+    color: $light
+    background-color: $primary
+    font-size: 1.214rem
+    box-shadow: 0 12px 24px rgba(6, 57, 158, 0.32)
+    &:hover
+      color: $primary
+      background-color: $light
+      transition: 0.4s
+  &__secondary
+    color: $primary
+    border: 1px solid $primary
+    font-size: 1.14rem
+    &:hover
+      color: $primary
+      background-color: $light
+      transition: 0.4s
