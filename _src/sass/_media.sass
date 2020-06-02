@@ -45,7 +45,7 @@
 @media screen and ( max-width: 992px )
   .hero
     background: $light url('/_src/img/hero-bg.png') no-repeat center / cover
-    background-position: right -225px bottom 80px
+    background-position: right 0px bottom 80px
   .logo
     &__name
       font-size: 1.1rem
@@ -74,8 +74,6 @@
       &:hover
         color: $primary
         background-color: transparent
-  .why-robot
-    margin-top: -250px
   .item
     width: 36%
     &__question
@@ -102,9 +100,16 @@
       margin-bottom: 5px
   .percent
     font-size: 70px
+  .why-robot
+    &__answer
+      margin-bottom: 80px
 @media screen and ( max-width: 768px )
   body.lock
-    overflow: hidden
+    overflow: hidden  
+  .why-robot
+    margin-top: 0
+    &__answer
+      margin-bottom: 60px
   .menu__burger
     display: block
     position: relative
@@ -171,8 +176,9 @@
       font-size: 1.3rem
   .hero
     background: #eaf1f7
-    height: 80vh
     padding-top: 84px
+    align-items: baseline
+    max-height: 30.8rem
     &__main-title
       padding-top: 0
       font-size: 45px
@@ -181,6 +187,8 @@
     &__section-text
       font-size: 0.99rem
       line-height: 1.3rem
+    &__wrapper
+      margin: 0
   .content
     &__text
       font-size: 1.1rem
@@ -216,7 +224,6 @@
     width: 35%
 @media screen and ( max-width: 570px )
   .hero
-    height: 55vh
     &__main-title
       padding-top: 1.6rem
       font-size: 30px
@@ -226,32 +233,38 @@
       font-size: 0.9rem
       line-height: 1.1rem
       margin-bottom: 2.7rem
-  .why-robot
-    margin-top: -70px
   .content
     flex-direction: column
     &__buttons
       width: 100%
+  .why-robot
+    &__answer
+      text-align: center
+      margin-bottom: 40px
   .item
     &__percent
       font-size: 150px
       letter-spacing: -10px
     &__content
-      font-size: 0.95rem
-      line-height: 1.2rem
       margin-bottom: 0.5rem
+      font-size: 1.4rem
+      line-height: 1.5rem
     &__text
-      font-size: 0.7rem
-      line-height: 1rem
+      font-size: 1.05rem
+      line-height: 1.2rem
   .item1
-    width: 45%
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 100%
+    margin-bottom: 2rem
   .item2
-    width: 40%
+    width: 100%
     &__text
       margin-bottom: -11px
 @media screen and ( max-width: 370px )
   .hero
-    height: 48vh
+    max-height: 26.8rem
     &__main-title
       padding-top: 0.5rem
       font-size: 25px
@@ -273,8 +286,9 @@
       letter-spacing: -8px
     &__content
       font-size: 1rem
-  .why-robot
-    margin-top: -60px
   .item2
     &__text
       margin-bottom: 0
+  .why-robot
+    &__answer
+      margin-bottom: 20px
