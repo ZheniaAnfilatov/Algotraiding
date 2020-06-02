@@ -1,5 +1,10 @@
 .header
   background-color: $light
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  z-index: 99
 .menu
   display: flex
   align-items: center
@@ -8,7 +13,6 @@
   &__logo
     display: flex
     align-items: center
-    margin-left: 1.2rem
   &__nav
     margin-left: 3rem
 .logo
@@ -22,6 +26,7 @@
     font-variant: small-caps
     &:hover
       color: $grizzly
+      transition: 0.3s
 .nav
   &__item
     position: relative
