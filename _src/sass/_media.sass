@@ -62,6 +62,8 @@
     &__text
       font-size: 14px
       line-height: 1.4rem
+  .benefit__slider, .slick-slider
+    margin-top: -407px
 @media screen and ( max-width: 992px )
   .hero
     background: $light url('/_src/img/hero-bg.png') no-repeat center / cover
@@ -138,15 +140,17 @@
     background-image: radial-gradient(circle 677px at center, #03256c 0%, #061826 100%)
     padding-top: 6rem
     padding-bottom: 6rem
-  .benefit
-
   .slider
     &__next, &__prev
       display: none
     &__center
       flex-basis: 50%
-
-
+    &__title
+      font-size: 20px
+    &__img
+      margin-bottom: 2.3rem  
+  .benefit__slider, .slick-slider
+    margin-top: -390px
 @media screen and ( max-width: 768px )
   body.lock
     overflow: hidden  
@@ -292,6 +296,19 @@
       margin: 0 auto
     &__title
       font-size: 20px
+  .benefit
+    &__section-title
+      padding-top: 3.4rem
+  .slider
+    &__img
+      &--inside
+        max-width: 80%
+    &__text
+      margin-bottom: 6.29rem
+  .benefit__slider, .slick-slider
+    margin-top: -320px
+  .slick-slide img 
+    margin: auto
 @media screen and ( max-width: 570px )
   .hero
     &__main-title
@@ -350,6 +367,27 @@
       max-width: 100% 
     &__title
       font-size: 16px
+  .slider
+    &__title
+      font-size: 14px
+      margin-bottom: 1rem
+    &__text
+      font-size: 11px
+      line-height: 1.1rem
+    &__img
+      margin-bottom: 1.5rem
+      &--inside
+        max-width: 50%
+    &__text
+      margin-bottom: 3.29rem
+  .benefit__slider, .slick-slider
+    margin-top: -200px
+  .benefit__slider .slick-prev
+    background-size: 90% 
+    left: 0
+  .benefit__slider .slick-next
+    background-size: 90% 
+    right: 0
 @media screen and ( max-width: 370px )
   .hero
     max-height: 26.8rem
@@ -396,3 +434,16 @@
   .start
     &__title
       font-size: 13px
+  .slider
+    &__title
+      font-size: 11px
+      margin-bottom: 1rem
+    &__text
+      font-size: 8px
+      line-height: 0.7rem
+    &__img
+      margin-bottom: 1rem
+    &__text
+      margin-bottom: 3rem
+  .benefit__slider, .slick-slider
+    margin-top: -165px
