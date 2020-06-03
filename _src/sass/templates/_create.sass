@@ -62,31 +62,5 @@
     max-width: 7rem
     margin-right: 2.357rem
 
-
 ::-moz-placeholder, :-moz-placeholder 
   opacity: 1
-.policy
-  position: relative
-  &__checkbox
-    opacity: 0
-    visibility: hidden
-    display: none
-    &:checked ~
-      .policy__label
-        &::before
-          background: $primary url('../img/check.svg') no-repeat center / 0.8rem
-  &__label
-    position: relative
-    display: flex
-    align-items: center
-    &::before
-      content: ''
-      width: 1.29rem
-      height: 1.29rem
-      border: 1px solid $primary
-      border-radius: 1px
-      cursor: pointer
-      margin-right: 0.57rem
-    &--center
-      justify-content: center
-      font-size: 1.1rem
