@@ -42,6 +42,19 @@
   .percent
     font-size: 100px
     margin-left: -5px
+  .section-title
+    font-size: 30px
+  .section-text
+    font-size: 14px
+  .input
+    margin-right: 0.5rem
+  .create
+    &__text
+      margin-right: 3rem
+    &__form-text
+      font-size: 15px
+    &__input-group
+      margin-right: 0.5rem
 @media screen and ( max-width: 992px )
   .hero
     background: $light url('/_src/img/hero-bg.png') no-repeat center / cover
@@ -103,6 +116,16 @@
   .why-robot
     &__answer
       margin-bottom: 80px
+  .create
+    padding-top: 50px
+    &__content
+      flex-wrap: wrap
+      justify-content: center
+      &:first-child
+        justify-content: start
+    &__text
+      margin-bottom: 4rem
+      width: 90%
 @media screen and ( max-width: 768px )
   body.lock
     overflow: hidden  
@@ -222,6 +245,25 @@
     width: 35%
   .item2
     width: 35%
+  .create
+    &__button
+      margin: 0 auto
+    &__form
+      display: block
+      padding-bottom: 0.5rem
+    &__form1
+      margin-top: 1.5rem
+    &__input-group
+      margin-bottom: 1rem
+    &__text
+      margin-bottom: 3rem
+    &__section-text
+      margin-bottom: 2.5rem
+    &__input
+      padding: 0.6rem 1rem
+      max-width: 5rem
+  .section-title
+    line-height: 35px
 @media screen and ( max-width: 570px )
   .hero
     &__main-title
@@ -262,6 +304,15 @@
     width: 100%
     &__text
       margin-bottom: -11px
+  .section-title
+    font-size: 22px
+    line-height: 30px
+    margin-bottom: 0.5rem
+  .section-text
+    font-size: 12px
+  .create
+    &__button
+      width: 100%
 @media screen and ( max-width: 370px )
   .hero
     max-height: 26.8rem
@@ -292,3 +343,15 @@
   .why-robot
     &__answer
       margin-bottom: 20px
+  .section-title
+    font-size: 19px
+    line-height: 25px
+    margin-bottom: 0.5rem
+  .section-text
+    font-size: 11px
+    line-height: 17px
+  .create
+    &__button
+      font-size: 0.8rem
+    &__form-text
+      font-size: 12px
