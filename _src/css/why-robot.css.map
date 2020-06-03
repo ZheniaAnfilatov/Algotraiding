@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AACG,AAAD,kBAAS,AAAC,CACR,OAAO,CAAE,IAAI,CAAG",
-    "sources": [
-        "../sass/templates/why-robot.sass"
-    ],
-    "names": [],
-    "file": "why-robot.css"
-}

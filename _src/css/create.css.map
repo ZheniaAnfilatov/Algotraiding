@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,OAAO,AAAC,CACN,aAAa,CAAE,KAAK,CAGC,AAFpB,AAAD,cAAQ,AAAC,CACP,OAAO,CAAE,IAAI,CAAG",
-    "sources": [
-        "../sass/templates/create.sass"
-    ],
-    "names": [],
-    "file": "create.css"
-}
