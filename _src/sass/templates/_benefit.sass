@@ -1,5 +1,5 @@
 .benefit
-  background-image: url('/_src/img/benefit-bg.png')
+  background-image: url('..img/benefit-bg.png')
   background-repeat: no-repeat
   background-position: bottom
   background-color: $sky
@@ -9,17 +9,16 @@
     margin: 0 auto
     text-align: center
     padding-top: 8.4rem
-    padding-bottom: 21rem
+    padding-bottom: 1rem
     &--bold
-      font-family: 'Roboto-Bold'
       font-weight: 700
   &__phone
     display: flex
     justify-content: center
-    position: absolute
-    bottom: 0
-    left: 50%
-    margin-left: -400px
+    // position: absolute
+    // bottom: 0
+    // left: 50%
+    // margin-left: -410px
     &--img
       margin: 0 auto
 .slider
@@ -42,15 +41,13 @@
     margin-bottom: 3.3rem  
   &__title
     color: $dark
-    font-family: 'Roboto-Bold'
     font-size: 24px
     font-weight: 700
     margin-bottom: 2rem
   &__text
     color: $dark
-    font-family: 'MyriadPro'
     font-size: 17px
-    font-weight: 400
+    font-weight: 300
     max-width: 12rem
     margin-bottom: 9.29rem
     line-height: 1.75rem
@@ -63,10 +60,12 @@
   height: 16px
 .benefit__slider .slick-prev
   left: 16.2%
-  background: url('/_src/img/arrow-prev.png') 0 0 no-repeat
+  background: url('../img/arrow-prev.png') 0 0 no-repeat
 .benefit__slider .slick-next
   right: 16.2%
-  background: url('/_src/img/arrow-next.png') 0 0 no-repeat
+  background: url('../img/arrow-next.png') 0 0 no-repeat
 .benefit__slider
 .slider__content
+.benefit__slider, .slick-slider
+  margin-top: -423px
   

@@ -55,6 +55,13 @@
       font-size: 15px
     &__input-group
       margin-right: 0.5rem
+  .benefit
+    &__section-title
+      padding-top: 5.4rem
+  .slider
+    &__text
+      font-size: 14px
+      line-height: 1.4rem
 @media screen and ( max-width: 992px )
   .hero
     background: $light url('/_src/img/hero-bg.png') no-repeat center / cover
@@ -131,6 +138,15 @@
     background-image: radial-gradient(circle 677px at center, #03256c 0%, #061826 100%)
     padding-top: 6rem
     padding-bottom: 6rem
+  .benefit
+
+  .slider
+    &__next, &__prev
+      display: none
+    &__center
+      flex-basis: 50%
+
+
 @media screen and ( max-width: 768px )
   body.lock
     overflow: hidden  

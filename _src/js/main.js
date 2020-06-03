@@ -7,5 +7,7 @@ $(document).ready(function () {
   });
 
   // слайдер
-  $('.benefit__slider').slick();
+  $('.benefit__slider').slick({
+    fade: true,
+  });
 });
