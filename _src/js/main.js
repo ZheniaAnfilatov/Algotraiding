@@ -10,4 +10,22 @@ $(document).ready(function () {
   $('.benefit__slider').slick({
     fade: true,
   });
+
+  // видео
+  var player;
+  $('.video__play').on('click', function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '100%',
+      width: '100%',
+      videoId: 'pT1EpTWPnyo',
+      events: {
+        'onReady': videoPlay,
+      }
+    });
+  })
+
+  function videoPlay(event) {
+    event.target.playVideo();
+  };
+
 });
