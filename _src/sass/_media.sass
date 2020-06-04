@@ -178,6 +178,8 @@
     &__item-text
       max-width: 41rem
   .format
+    &__lessons
+      margin-bottom: 60px
     &__item
       &-text
         max-width: 16rem
@@ -200,6 +202,22 @@
       margin-bottom: 1rem
   .point
     flex-wrap: wrap
+  .process
+    &__lessons
+      width: 100%
+      padding-bottom: 4rem
+    &__section-title
+      margin: auto
+      text-align: center
+    &__title
+      padding-top: 4rem
+      margin-bottom: 4rem
+    &__lesson
+      &-content
+        font-size: 1.9rem
+        margin-bottom: 1.5rem
+      &-text
+        margin-bottom: 1rem
 @media screen and ( max-width: 768px )
   body.lock
     overflow: hidden  
@@ -383,6 +401,17 @@
   .lesson
     &__img
       margin-bottom: 1rem
+  .process
+    &__lessons
+      padding-bottom: 2rem
+    &__title
+      padding-top: 2rem
+      margin-bottom: 2rem
+    &__lesson
+      &-content 
+        margin-bottom: 0.5rem
+      &-class
+        margin-bottom: 0.5rem
 @media screen and ( max-width: 570px )
   .hero
     &__main-title
@@ -489,6 +518,11 @@
       min-height: 17.2rem
       background-position: left -343px bottom -145px
   .format
+    &__lesson
+      &-text
+        font-size: 0.9rem
+      &-content
+        font-size: 1.3rem
     &__title
       padding-top: 3rem
       margin-bottom: 2.4rem
@@ -512,6 +546,10 @@
         padding-left: 0
     &__col
       padding-top: 4rem
+  .process
+    &__lesson
+      &-content 
+        font-size: 1.9rem
 @media screen and ( max-width: 370px )
   .hero
     max-height: 26.8rem
@@ -589,3 +627,10 @@
       margin-bottom: 2.5rem
       &-item  
         min-width: 17rem
+    &__lesson
+      &-content
+        font-size: 1.3rem
+  .process
+    &__lesson
+      &-content 
+        font-size: 1.7rem
