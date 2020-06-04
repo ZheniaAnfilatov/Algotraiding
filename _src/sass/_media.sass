@@ -1,9 +1,14 @@
+@media screen and ( max-width: 1920px )
+  .hero
+    background-position: right 0px bottom -180px
+@media screen and ( max-width: 1640px )
+  .hero
+    background-position: right 0px bottom -70px
 @media screen and ( max-width: 1360px )
   .menu__burger
     display: none
 @media screen and ( max-width: 1200px )
   .hero
-    background: $light url('../img/hero-bg.png') no-repeat center / cover
     background-position: right -10px bottom -30px
   .logo
     &__name
@@ -81,6 +86,11 @@
       &-text
         font-size: 0.9rem
         max-width: 17.5rem
+  .process
+    &::before
+      top: 35%
+    &__lesoon-content
+      margin-bottom: 2rem
 @media screen and ( max-width: 992px )
   .hero
     background: $light url('../img/hero-bg.png') no-repeat center / cover
@@ -114,7 +124,7 @@
         color: $primary
         background-color: transparent
   .item
-    width: 36%
+    width: 34%
     &__question
       font-size: 1.6rem
       padding: 10px 10px
@@ -130,7 +140,7 @@
       font-size: 0.9rem
       max-width: 100%
   .item1
-    width: 32%
+    width: 31%
     &__content
       margin-bottom: 1.2rem
     &__text
@@ -144,6 +154,10 @@
   .why-robot
     &__answer
       margin-bottom: 80px
+    &__content
+      max-width: 16rem
+    &__text
+      max-width: 16rem
   .create
     padding-top: 50px
     padding-bottom: 70px
@@ -177,6 +191,11 @@
   .simply
     &__item-text
       max-width: 41rem
+  .video
+    &__play
+      &:hover
+        background: transparent
+        border-radius: 0
   .format
     &__lessons
       margin-bottom: 60px
@@ -203,6 +222,8 @@
   .point
     flex-wrap: wrap
   .process
+    &::before
+      top: 30%
     &__lessons
       width: 100%
       padding-bottom: 4rem
@@ -211,7 +232,7 @@
       text-align: center
     &__title
       padding-top: 4rem
-      margin-bottom: 4rem
+      margin-bottom: 6rem
     &__lesson
       &-content
         font-size: 1.9rem
@@ -222,9 +243,13 @@
   body.lock
     overflow: hidden  
   .why-robot
-    margin-top: 0
+    margin-top: -80px
     &__answer
+      flex-wrap: wrap
+      justify-content: space-around
       margin-bottom: 60px
+    &__text
+      max-width: 14rem  
   .menu__burger
     display: block
     position: relative
@@ -291,9 +316,10 @@
       font-size: 1.3rem
   .hero
     background: radial-gradient(white, #eaf1f7)
-    padding-top: 84px
     align-items: baseline
-    max-height: 30.8rem
+    padding-top: 170px
+    max-height: 40.8rem
+    padding-bottom: 80px
     &__main-title
       padding-top: 0
       font-size: 45px
@@ -318,10 +344,6 @@
       font-size: 0.9rem
     &__secondary
       font-size: 0.9rem
-  .why-robot
-    &__answer
-      flex-wrap: wrap
-      justify-content: space-around
   .item
     width: 100%
     display: flex
@@ -330,7 +352,7 @@
     margin-bottom: 1rem
     &__question
       font-size: 2.6rem
-      max-width: 19rem
+      max-width: 20rem
     &__img
       margin-bottom: 2rem
   .item1
@@ -373,7 +395,7 @@
     &__text
       margin-bottom: 6.29rem
   .benefit__slider, .slick-slider
-    margin-top: -320px
+    margin-top: -323px
   .slick-slide img 
     margin: auto
   .simply
@@ -402,11 +424,12 @@
     &__img
       margin-bottom: 1rem
   .process
+    &::before
+      top: 25%
     &__lessons
       padding-bottom: 2rem
     &__title
       padding-top: 2rem
-      margin-bottom: 2rem
     &__lesson
       &-content 
         margin-bottom: 0.5rem
@@ -489,7 +512,7 @@
     &__text
       margin-bottom: 3.29rem
   .benefit__slider, .slick-slider
-    margin-top: -200px
+    margin-top: -202px
   .benefit__slider .slick-prev
     background-size: 90% 
     left: 0
@@ -515,8 +538,8 @@
       padding: 1.05rem 0.5rem
     &__video
       max-width: 28.5rem
-      min-height: 17.2rem
-      background-position: left -343px bottom -145px
+      min-height: 11.2rem
+      background-size: contain
   .format
     &__lesson
       &-text
@@ -609,7 +632,7 @@
     &__text
       margin-bottom: 3rem
   .benefit__slider, .slick-slider
-    margin-top: -165px
+    margin-top: -169px
   .simply
     &__section-title
       &::before
@@ -620,6 +643,8 @@
     &__button
       font-size: 0.63rem
       padding: 1.05rem 0.2rem
+    &__video
+      min-height: 9.2rem
   .format
     &__title
       padding-top: 2rem
@@ -631,6 +656,17 @@
       &-content
         font-size: 1.3rem
   .process
+    &::before
+      top: 20%
     &__lesson
       &-content 
         font-size: 1.7rem
+@media screen and ( max-width: 360px )
+  .benefit__slider, .slick-slider
+    margin-top: -166px
+@media screen and ( max-width: 340px )
+  .benefit__slider, .slick-slider
+    margin-top: -163px
+@media screen and ( max-width: 320px )
+  .benefit__slider, .slick-slider
+    margin-top: -159px
