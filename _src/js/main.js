@@ -6,11 +6,18 @@ $(document).ready(function () {
     $('body').toggleClass('lock')
   });
 
-  // слайдер
+  // слайдер benefit
   $('.benefit__slider').slick({
     fade: true,
   });
 
+  // слайдер description
+  $('.description__slider').slick({
+    fade: true,
+    dots: true,
+    infinite: false,
+  });
+  
   // видео
   var player;
   $('.video__play').on('click', function onYouTubeIframeAPIReady() {

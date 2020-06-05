@@ -70,7 +70,7 @@
     &__text
       font-size: 14px
       line-height: 1.4rem
-  .benefit__slider, .slick-slider
+  .benefit__slider.slick-slider
     margin-top: -407px
   .format
     &__item
@@ -91,6 +91,26 @@
       top: 35%
     &__lesoon-content
       margin-bottom: 2rem
+  .description
+    &__title
+      padding-bottom: 4.7rem
+      font-size: 2.3rem  
+    &__task
+      font-size: 1.49rem
+    &__homework
+      &--item
+        font-size: 1.51rem
+      &--item1
+        font-size: 1.1rem
+    &__marker
+      font-size: 1.05rem
+    &__lesson-number
+      font-size: 15px
+  .description__slider .slick-dots
+    right: 40px
+  li button
+    width: 30px
+    height: 30px
 @media screen and ( max-width: 992px )
   .hero
     background: $light url('../img/hero-bg.png') no-repeat center / cover
@@ -186,7 +206,7 @@
       font-size: 20px
     &__img
       margin-bottom: 2.3rem  
-  .benefit__slider, .slick-slider
+  .benefit__slider.slick-slider
     margin-top: -390px
   .simply
     &__item-text
@@ -239,6 +259,42 @@
         margin-bottom: 1.5rem
       &-text
         margin-bottom: 1rem
+  .description
+    &__title
+      padding-top: 6rem
+      padding-bottom: 4.8rem
+      font-size: 2rem
+    &__slider-content
+      padding-bottom: 4.3rem
+      align-items: center
+    &__lesson-number
+      display: none
+    &__task
+      font-size: 1.2rem
+    &__homework
+      &--item
+        font-size: 1.2rem
+        line-height: 20px
+      &--item1
+        font-size: 0.9rem
+        line-height: 15px
+    &__marker
+      font-size: 0.9rem
+      max-width: 22rem
+    &__buttons
+      padding-bottom: 3.57rem
+      flex-direction: column
+      align-items: center
+    &__button
+      margin-bottom: 1rem
+      max-width: 20rem
+      &--secondary
+        margin-right: 0
+  li
+    max-width: 23.36rem
+  .description__slider .slick-dots
+    left: 0
+    top: 140px
 @media screen and ( max-width: 768px )
   body.lock
     overflow: hidden  
@@ -394,7 +450,7 @@
         max-width: 80%
     &__text
       margin-bottom: 6.29rem
-  .benefit__slider, .slick-slider
+  .benefit__slider.slick-slider
     margin-top: -323px
   .slick-slide img 
     margin: auto
@@ -435,6 +491,43 @@
         margin-bottom: 0.5rem
       &-class
         margin-bottom: 0.5rem
+  .description
+    &__title
+      padding-top: 4rem
+      font-size: 1.7rem
+    &__task
+      font-size: 1.1rem
+      padding-bottom: 1.2rem
+    &__slider-content
+      padding-bottom: 1.3rem
+    &__homework
+      width: 30%
+      &--item
+        font-size: 1.1rem
+    &__information
+      width: 70%
+    &__button--primary
+      padding: 1.05rem 4.2rem
+    &__present
+      flex-direction: column
+      align-items: center
+    &__bonus
+      text-align: center
+    &__marker
+      font-size: 0.8rem
+      max-width: 14rem
+      line-height: 16px
+      padding-top: 5px
+      &--up
+        font-size: 0.8rem
+        max-width: 10rem
+        line-height: 16px
+        text-align: center
+        padding-left: 0
+  .out
+    display: none
+  .description__slider .slick-dots
+    top: 113px
 @media screen and ( max-width: 570px )
   .hero
     &__main-title
@@ -511,7 +604,7 @@
         max-width: 50%
     &__text
       margin-bottom: 3.29rem
-  .benefit__slider, .slick-slider
+  .benefit__slider.slick-slider
     margin-top: -202px
   .benefit__slider .slick-prev
     background-size: 90% 
@@ -573,6 +666,24 @@
     &__lesson
       &-content 
         font-size: 1.9rem
+  .description
+    &__homework
+      padding-top: 2rem
+      width: 100%
+    &__information
+      width: 100%
+    &__slider-content
+      flex-direction: column
+      align-items: start
+    &__marker
+      padding-bottom: 1rem
+    &__button
+      max-width: 100%
+      width: 100%
+  .out1
+    display: none
+  .description__slider .slick-arrow
+    bottom: 190px
 @media screen and ( max-width: 370px )
   .hero
     max-height: 26.8rem
@@ -631,7 +742,7 @@
       margin-bottom: 1rem
     &__text
       margin-bottom: 3rem
-  .benefit__slider, .slick-slider
+  .benefit__slider.slick-slider
     margin-top: -169px
   .simply
     &__section-title
@@ -661,12 +772,18 @@
     &__lesson
       &-content 
         font-size: 1.7rem
+  li button
+    width: 26px
+    height: 26px
+  .description
+    &__homework--item
+      font-size: 0.9rem
 @media screen and ( max-width: 360px )
-  .benefit__slider, .slick-slider
+  .benefit__slider.slick-slider
     margin-top: -166px
 @media screen and ( max-width: 340px )
-  .benefit__slider, .slick-slider
+  .benefit__slider.slick-slider
     margin-top: -163px
 @media screen and ( max-width: 320px )
-  .benefit__slider, .slick-slider
+  .benefit__slider.slick-slider
     margin-top: -159px
