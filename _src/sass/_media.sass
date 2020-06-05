@@ -111,6 +111,16 @@
   li button
     width: 30px
     height: 30px
+  .advantages
+    padding-bottom: 4.28rem
+    &__wrapper
+      padding: 0
+    &__section-title
+      padding-top: 5rem
+  .paragraph
+    &__text
+      font-size: 14px
+      line-height: 20px
 @media screen and ( max-width: 992px )
   .hero
     background: $light url('../img/hero-bg.png') no-repeat center / cover
@@ -266,7 +276,7 @@
       font-size: 2rem
     &__slider-content
       padding-bottom: 4.3rem
-      align-items: center
+      align-items: flex-end
     &__lesson-number
       display: none
     &__task
@@ -295,6 +305,10 @@
   .description__slider .slick-dots
     left: 0
     top: 140px
+  .advantages
+    &__paragraph
+      flex-wrap: wrap
+      justify-content: space-around
 @media screen and ( max-width: 768px )
   body.lock
     overflow: hidden  
@@ -500,6 +514,7 @@
       padding-bottom: 1.2rem
     &__slider-content
       padding-bottom: 1.3rem
+      align-items: center
     &__homework
       width: 30%
       &--item
@@ -528,6 +543,9 @@
     display: none
   .description__slider .slick-dots
     top: 113px
+  .paragraph
+    &__item
+      margin-bottom: 1rem
 @media screen and ( max-width: 570px )
   .hero
     &__main-title
@@ -684,6 +702,18 @@
     display: none
   .description__slider .slick-arrow
     bottom: 190px
+  .advantages
+    padding-bottom: 1.5rem  
+    &__section-title
+      padding-top: 2rem
+      padding-bottom: 1.7rem
+    &__subtitle
+      margin-bottom: 1.3rem
+    &__paragraph
+      margin-bottom: 1.8rem
+  .paragraph
+    &__text
+      font-size: 12px
 @media screen and ( max-width: 370px )
   .hero
     max-height: 26.8rem
