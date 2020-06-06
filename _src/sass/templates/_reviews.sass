@@ -1,0 +1,91 @@
+.reviews
+  padding-bottom: 8rem
+  background: url(../img/reviews-bg.png) no-repeat left bottom 
+  &__section-title
+    margin-bottom: 4.5rem
+    text-align: center
+    &::before
+      content: ''
+      display: block 
+      height: 72px 
+      width: 1px 
+      background: $sky
+      margin: auto
+      margin-bottom: 39px
+  &__video
+    position: relative
+    display: flex
+    margin: auto
+    margin-bottom: 5.1rem
+    max-width: 67rem
+    min-height: 27.8rem
+    background: $sky url('../img/reviews.png') center no-repeat
+    &-title
+      margin: auto
+      padding-bottom: 8.2rem
+  &__item
+    margin-bottom: 1.5rem
+    text-align: center
+    &-content
+      max-width: 100%
+      text-align: center
+      font-size: 1.7rem
+      margin-bottom: 1.8rem
+    &-text
+      font-weight: 300
+      max-width: 100%
+      margin-bottom: 1.357rem  
+      text-align: center
+      margin: auto
+      max-width: 37.7rem
+      color: $title
+      font-size: 16px
+      line-height: 24px
+  &__section
+    &-subtitle
+      margin-bottom: 1.7rem
+      font-size: 35.3px
+      max-width: 20rem
+    &-text
+      color: #061826
+      font-size: 16px
+      line-height: 24px
+      max-width: 18rem
+  &__content
+    padding-top: 8.5rem
+    display: flex
+  &__subtitle
+    width: 38.5%
+.results
+  width: 57%
+  display: flex
+  justify-content: space-between
+  &__img
+    margin-bottom: 2.5rem
+  &__name
+    color: $main
+    font-size: 24px
+    line-height: 28.8px
+    font-weight: 300
+    margin-bottom: 2rem
+  &__text
+    color: $title
+    font-size: 16px
+    font-weight: 300
+    line-height: 24px
+    max-width: 19.7rem
+    &--down
+      max-width: 16rem  
+.video
+  &__play1
+    position: relative
+    margin: auto
+    cursor: pointer
+    &:hover
+      background: $sky
+      border-radius: 50%
+.slick-slide .reviews__video
+  background: transparent
+  border: 1px solid #eaf1f7
+.slick-center .reviews__video
+  background: $sky url('../img/reviews.png') center no-repeat
