@@ -126,6 +126,16 @@
       width: 33.5%
   .results
     width: 60%
+  .questions
+    &__shape
+      flex-wrap: wrap
+      justify-content: space-around
+      &--input
+        margin-right: 0
+    &__content
+      &--buttons
+        width: 100%
+        align-items: center
 @media screen and ( max-width: 992px )
   .hero
     background: $light url('../img/hero-bg.png') no-repeat center / cover
@@ -372,6 +382,27 @@
     background: $sky
     padding-top: 6.7rem
     padding-bottom: 6rem
+  .questions
+    padding-top: 6rem
+    padding-bottom: 6.14rem
+    &__shape
+      flex-direction: column
+      align-items: center
+  .footer
+    padding-top: 4.5rem
+    padding-bottom: 4.5rem
+    &__wrapper
+      flex-wrap: wrap
+    &__link
+      &:hover
+        background: transparent
+  .col
+    &__link
+      font-size: 14px
+      &:hover
+        color: $grizzly
+  .col2
+    margin-left: 0
 @media screen and ( max-width: 768px )
   body.lock
     overflow: hidden  
@@ -679,6 +710,25 @@
     &__title
       font-size: 20px
       max-width: 24.5rem
+  .questions
+    padding-top: 4rem
+    padding-bottom: 4.14rem
+    &__section-text
+      font-size: 14px
+    &__shape
+      &--button
+        max-width: 23rem
+        padding: 1.05rem 6.4rem
+  .footer
+    padding-top: 2.5rem
+    padding-bottom: 2.5rem
+    &__wrapper
+      justify-content: space-around
+    &__col
+      &--input
+        width: 50%
+        max-width: 25.2rem 
+        margin-top: 1rem 
 @media screen and ( max-width: 570px )
   .hero
     &__main-title
@@ -880,6 +930,7 @@
     &__section-text
       font-size: 12px
       max-width: 26rem  
+      line-height: 20px
   .shape 
     &__input
       width: 100%
@@ -922,6 +973,48 @@
       font-size: 16px
       line-height: 22px
       max-width: 16.5rem
+  .questions
+    padding-top: 2rem
+    padding-bottom: 2.14rem
+    &__shape
+      &--button
+        width: 100%
+    &__section-title
+      font-size: 20px
+      margin-bottom: 1rem
+    &__section-text
+      font-size: 12px
+      line-height: 20px
+  .footer
+    &__wrapper
+      justify-content: space-between
+    &__col--input
+      max-width: 17.2rem
+    &__shape
+      &--input
+        padding: 12px 42px 12px 9px
+        width: 100%
+        &::placeholder
+          font-size: 11px
+    &__link
+      width: 30px
+      height: 30px
+  .col
+    width: 50%
+    &__social
+      max-width: 12rem
+    &__title
+      font-size: 20px
+      margin-bottom: 1.5rem
+    &__link
+      font-size: 12px
+      max-width: 10rem
+      line-height: 16px
+  .col1
+    padding-top: 26px
+    border-top: none
+  .col2
+    width: 36%
 @media screen and ( max-width: 370px )
   .hero
     max-height: 26.8rem
@@ -1032,6 +1125,20 @@
       font-size: 0.9rem
     &__content
       padding-top: 3rem
+  .questions
+    &__shape
+      &--button
+        padding: 1.05rem 2rem
+  .col
+    width: 100%
+    &__social
+      max-width: 17rem
+  .col1
+    width: 50%
+    padding-top: 0
+  .footer
+    &__wrapper
+      justify-content: center
 @media screen and ( max-width: 360px )
   .benefit__slider.slick-slider
     margin-top: -166px

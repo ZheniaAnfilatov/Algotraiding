@@ -1,11 +1,26 @@
 .free
+  position: relative
   padding-top: 9rem
   padding-bottom: 9.14rem
-  background: url(../img/adv-bg.png),radial-gradient(circle 677px at center, #03256c 0%, #061826 100%)
+  background: url(../img/adv-bg.png)
   background-size: cover
   background-repeat: no-repeat
+  z-index: 5
+  &::before
+    content: ''
+    background-image: radial-gradient(circle 1152px at center, #03256c 0%, #061826 100%)
+    width: 100%
+    height: 100%
+    opacity: 0.93
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 0
+  &__modal
+    position: relative
   &__wrapper
     text-align: center
+    position: relative
   &__section-title
     color: $light
     font-size: 24px
