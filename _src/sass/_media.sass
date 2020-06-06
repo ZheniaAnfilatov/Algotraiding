@@ -121,6 +121,11 @@
     &__text
       font-size: 14px
       line-height: 20px
+  .reviews
+    &__subtitle
+      width: 33.5%
+  .results
+    width: 60%
 @media screen and ( max-width: 992px )
   .hero
     background: $light url('../img/hero-bg.png') no-repeat center / cover
@@ -332,6 +337,41 @@
     &__input
       &::placeholder
         font-size: 16px
+  .reviews
+    &__item-text
+      max-width: 31.7rem
+    &__video-title
+      padding-bottom: 4.2rem
+    &__content
+      padding-top: 4rem
+      flex-direction: column
+      align-items: center
+    &__subtitle
+      width: 100%
+    &__section
+      &-title
+        font-size: 35px
+        max-width: 28rem
+        margin: auto
+        margin-bottom: 2rem
+      &-subtitle
+        max-width: 22rem
+        margin: auto
+        margin-bottom: 1rem
+      &-text
+        max-width: 18rem
+        margin: auto
+        line-height: 18px
+    &__subtitle
+      text-align: center
+      margin-bottom: 2rem
+  .results
+    width: 100%
+    justify-content: space-around
+  .return
+    background: $sky
+    padding-top: 6.7rem
+    padding-bottom: 6rem
 @media screen and ( max-width: 768px )
   body.lock
     overflow: hidden  
@@ -600,6 +640,45 @@
     &__input
       margin-right: 0
       padding: 16px 114px 16px 17px
+  .reviews
+    padding-bottom: 4rem
+    &__section-title
+      font-size: 30px
+      max-width: 24rem
+      margin: auto
+      margin-bottom: 0
+      &::before
+        height: 50px
+        margin-bottom: 20px
+    &__video-title
+      padding-bottom: 4rem
+    &__content
+      padding-top: 4rem
+    &__results
+      margin-bottom: 2rem
+    &__section-subtitle
+      font-size: 30px
+  .results
+    flex-direction: column
+    align-items: center
+    &__name
+      text-align: center
+      margin-bottom: 1rem
+    &__text
+      font-size: 14px
+      text-align: center
+      max-width: 26.7rem
+    &__img
+      margin-bottom: 0.5rem
+      text-align: center
+  .return
+    padding-top: 4rem
+    padding-bottom: 4rem
+    &__button
+      margin: 0 auto
+    &__title
+      font-size: 20px
+      max-width: 24.5rem
 @media screen and ( max-width: 570px )
   .hero
     &__main-title
@@ -810,6 +889,39 @@
     &__button
       max-width: 100%
       padding: 1.05rem 5rem
+  .reviews
+    padding-bottom: 0
+    &__section-title
+      max-width: 18rem
+    &__section-subtitle
+      font-size: 22px
+      max-width: 18rem
+    &__video
+      height: 10.5rem
+      min-height: 10.5rem
+      max-width: 25rem
+      margin: auto
+    &__item-text
+      max-width: 18.7rem
+  .slick-active .reviews__video
+    background-size: contain
+  .results
+    &__text
+      font-size: 12px
+      line-height: 20px
+      max-width: 18.7rem
+  .return
+    padding-top: 2rem
+    padding-bottom: 2rem
+    &__button
+      width: 100%
+      max-width: 100% 
+      font-size: 0.8rem
+      max-width: 20rem
+    &__title
+      font-size: 16px
+      line-height: 22px
+      max-width: 16.5rem
 @media screen and ( max-width: 370px )
   .hero
     max-height: 26.8rem
@@ -914,6 +1026,12 @@
   .shape
     &__input
       padding: 10px 114px 10px 17px
+  .reviews
+    padding-bottom: 2rem
+    &__item-text
+      font-size: 0.9rem
+    &__content
+      padding-top: 3rem
 @media screen and ( max-width: 360px )
   .benefit__slider.slick-slider
     margin-top: -166px

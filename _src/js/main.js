@@ -25,6 +25,27 @@ $(document).ready(function () {
     centerPadding: '290px',
     slidesToShow: 1,
     focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          centerPadding: '200px',
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          centerPadding: '150px',
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          centerMode: false,
+          arrows: true,
+        }
+      },
+    ]
   });
   
   // видео
