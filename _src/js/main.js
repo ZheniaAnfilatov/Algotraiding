@@ -98,4 +98,31 @@ $(document).ready(function () {
     event.target.playVideo();
   };
 
+  // модальное окно
+  var popUp = $('.pop-up'),
+      closeBtn = $('.pop-up__close'),
+      popUpBtn = $('.hero__button');
+
+  // появление окна
+    popUpBtn.on('click', function () {
+      popUp.toggleClass('pop-up--visible');
+  });
+
+  // закрывание окна
+    closeBtn.on('click', function () {
+      popUp.toggleClass('pop-up--visible');
+  });
+
+  // закрывание на esc
+  $(document).keydown(function(e) {        
+    if (e.keyCode == 27) {
+      popUp.removeClass('pop-up--visible');
+    }
+  });
+   
+  $(document).click(function (e) {
+    if ($(e.target).is (popUp)) {
+      popUp.toggleClass('pop-up--visible');
+    }
+  });
 });
