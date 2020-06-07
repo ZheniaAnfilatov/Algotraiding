@@ -21,7 +21,7 @@ $(document).ready(function () {
   // слайдер reviews
   $('.reviews__slider').slick({
     arrows: false,
-    autoplay: true,
+    // autoplay: true,
   });
   
   // видео
@@ -167,6 +167,7 @@ $(document).ready(function () {
           $(form)[0].reset();
           popUp.removeClass('pop-up--visible');
           popUpThanks.addClass('pop-up__thanks--visible');
+          ym('117652555', 'reachGoal', 'request'); return true;
         }
       });
     }
@@ -232,6 +233,7 @@ $(document).ready(function () {
           $(form)[0].reset();
           popUp.removeClass('pop-up--visible');
           popUpThanks.addClass('pop-up__thanks--visible');
+          ym('117652555', 'reachGoal', 'request'); return true;
         }
       });
     }
@@ -279,11 +281,12 @@ $(document).ready(function () {
           $(form)[0].reset();
           popUp.removeClass('pop-up--visible');
           popUpThanks.addClass('pop-up__thanks--visible');
+          ym('117653131', 'reachGoal', 'request'); return true;
         }
       });
     }
   });
-
+  
   // перемещение по ссылкам
   $("body").on('click', '[href*="#"]', function (e) {
     var fixed_offset = 80;
