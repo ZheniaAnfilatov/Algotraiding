@@ -67,8 +67,47 @@ button::-moz-focus-inner
   outline: none
 .slick-arrow
   cursor: pointer
+a
+  cursor: pointer
 
-
+.button-up
+  display: inline-block
+  background: radial-gradient(circle 1426px at center, #03256c 0%, #061826 100%)
+  width: 50px
+  height: 50px
+  text-align: center
+  border-radius: 4px
+  position: fixed
+  bottom: 30px
+  right: 30px
+  transition: background-color 0.3s
+  z-index: 1000
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s
+  visibility: hidden
+  opacity: 0
+  &:hover
+    cursor: pointer
+    background: $light
+  &:active
+    background: #555
+.up
+  width: 40px
+  transform: rotate(-90deg)
+.show
+  visibility: visible
+  opacity: 1
+div.invalid
+  position: absolute
+  bottom: -18px
+  color: tomato
+div.mistake
+  position: absolute
+  bottom: 5px
+  color: tomato
+.input__group
+  position: relative
+button
+  cursor: pointer
   // слайдер
 .slick-slider
 .slick-list

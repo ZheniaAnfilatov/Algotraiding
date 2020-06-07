@@ -19,7 +19,7 @@
     visibility: visible
   &__dialog
     position: relative
-    min-height: 36.36rem 
+    min-height: 31.36rem 
     max-width: 36.14rem 
     background: radial-gradient(circle 1426px at center, #03256c 0%, #061826 100%)
     padding: 0.1rem 5.5rem 1.8rem
@@ -46,24 +46,25 @@
     display: flex
     flex-direction: column
   &__input
-    padding: 16px 61px 16px 17px
+    padding: 16px 6px 16px 17px
+    border-radius: 5px
+    width: 21rem
     border-radius: 5px
     &-group
       position: relative
-      margin-bottom: 3.2rem
+      margin-bottom: 2.2rem
       display: flex
       flex-direction: column
-  &__policy
-    margin-bottom: 2.7rem
-    font-size: 1.15rem
-    margin-top: -0.95rem
   &__button
     align-self: flex-end
     padding: 1.3rem 3.5rem
     cursor: pointer
+    background-color: $primary
+    color: $light
+    text-transform: uppercase
     &:hover
-      background-color: $primary
-      color: $light
+      background-color: $light
+      color: $dark
   &__thanks
     opacity: 0
     visibility: hidden
@@ -83,7 +84,9 @@
       opacity: 1
       visibility: visible
     &-text
-      color: $primary
+      color: $light
+      padding-top: 0
+      margin-top: 0
     &--close
       position: absolute
       right: 0
@@ -95,7 +98,7 @@
       margin: 0.857rem
       cursor: pointer
     &-title
-      padding-top: 5rem
+      padding-top: 3rem
     &-dialog
       display: flex
       flex-direction: column

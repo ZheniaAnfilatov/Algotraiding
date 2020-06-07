@@ -61,8 +61,8 @@ $(document).ready(function () {
     });
   })
 
-  $('.video__play1').on('click', function onYouTubeIframeAPIReady() {
-    player = new YT.Player('reviews-playerOne', {
+  $('.video__playOne').on('click', function onYouTubeIframeAPIReady() {
+    player = new YT.Player('reviewsPlayerOne', {
       height: '100%',
       width: '100%',
       videoId: 'pT1EpTWPnyo',
@@ -72,8 +72,8 @@ $(document).ready(function () {
     });
   })
 
-  $('.video__play1').on('click', function onYouTubeIframeAPIReady() {
-    player = new YT.Player('reviews-playerTwo', {
+  $('.video__playTwo').on('click', function onYouTubeIframeAPIReady() {
+    player = new YT.Player('reviewsPlayerTwo', {
       height: '100%',
       width: '100%',
       videoId: 'pT1EpTWPnyo',
@@ -83,8 +83,8 @@ $(document).ready(function () {
     });
   })
 
-  $('.video__play1').on('click', function onYouTubeIframeAPIReady() {
-    player = new YT.Player('reviews-playerThree', {
+  $('.video__playThree').on('click', function onYouTubeIframeAPIReady() {
+    player = new YT.Player('reviewsPlayerThree', {
       height: '100%',
       width: '100%',
       videoId: 'pT1EpTWPnyo',
@@ -101,7 +101,7 @@ $(document).ready(function () {
   // модальное окно
   var popUp = $('.pop-up'),
       closeBtn = $('.pop-up__close'),
-      popUpBtn = $('.hero__button');
+      popUpBtn = $('.open__button');
 
   // появление окна
     popUpBtn.on('click', function () {
@@ -125,4 +125,187 @@ $(document).ready(function () {
       popUp.toggleClass('pop-up--visible');
     }
   });
+
+  // кнопка наверх
+  var btn = $('.button-up');
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 400) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, 900);
+  });
+
+  // маска для телефона
+
+  $('[type=tel]').mask('+7(000) 000-00-00');
+
+  // валидацция формы модального окна
+  var popUpThanks = $('.pop-up__thanks');
+      closeThanks = $('.pop-up__thanks--close');
+
+  $('.pop-up__form').validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    ignore: ":disabled",
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: {
+        required: true,
+        minlength: 17
+      },
+      userEmail: {
+        required: true,
+        email: true
+      },
+    },
+      // сообщения
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Не меньше 2 символов",
+        maxlength: "Не больше 15 символов"
+      },
+      userPhone: "Заполните поле",
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email",
+      },
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $('.pop-up__form').serialize(),
+        success: function (response) {
+          $(form)[0].reset();
+          popUp.removeClass('pop-up--visible');
+          popUpThanks.addClass('pop-up__thanks--visible');
+        }
+      });
+    }
+  });
+
+   // закрывание на крестик
+   closeThanks.on('click', function () {
+    popUpThanks.toggleClass('pop-up__thanks--visible');
+  });
+
+  // закрывание на esc
+  $(document).keydown(function(e) {        
+    if (e.keyCode == 27) {
+      popUpThanks.removeClass('pop-up__thanks--visible');
+    }
+  });
+  // закрывание на клик
+  $(document).click(function (e) {
+    if ($(e.target).is (popUpThanks)) {
+      popUpThanks.toggleClass('pop-up__thanks--visible');
+    }
+  });
+
+  // free form
+  $('.free__form').validate({
+    errorClass: "mistake",
+    errorElement: "div",
+    ignore: ":disabled",
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: {
+        required: true,
+        minlength: 17
+      },
+      userEmail: {
+        required: true,
+        email: true
+      },
+    },
+      // сообщения
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Не меньше 2 символов",
+        maxlength: "Не больше 15 символов"
+      },
+      userPhone: "Заполните поле",
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email",
+      },
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $('.free__form').serialize(),
+        success: function (response) {
+          $(form)[0].reset();
+          popUp.removeClass('pop-up--visible');
+          popUpThanks.addClass('pop-up__thanks--visible');
+        }
+      });
+    }
+  });
+
+  // questions form
+  $('.questions__form').validate({
+    errorClass: "mistake",
+    errorElement: "div",
+    ignore: ":disabled",
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: {
+        required: true,
+        minlength: 17
+      },
+      userEmail: {
+        required: true,
+        email: true
+      },
+    },
+      // сообщения
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Не меньше 2 символов",
+        maxlength: "Не больше 15 символов"
+      },
+      userPhone: "Заполните поле",
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email",
+      },
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $('.questions__form').serialize(),
+        success: function (response) {
+          $(form)[0].reset();
+          popUp.removeClass('pop-up--visible');
+          popUpThanks.addClass('pop-up__thanks--visible');
+        }
+      });
+    }
+  });
+
 });
