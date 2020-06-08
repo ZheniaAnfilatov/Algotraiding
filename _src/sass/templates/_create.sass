@@ -1,10 +1,11 @@
 .create
-  padding-bottom: 120px
+  padding-bottom: 88px
   padding-top: 105px
   background: url('../img/create-bg.png') no-repeat bottom
   &__item-content
     margin-bottom: 2.1rem
     margin-top: 9px
+    max-width: 26.9rem
   &__title
     display: flex
     flex-direction: column
@@ -33,7 +34,10 @@
   &__form1
     border-bottom: none
     margin-top: 2.4rem
+    flex-wrap: wrap
+    padding-bottom: 0
   &__input-group
+    position: relative
     display: flex
     align-items: center
     margin-right: 3.5rem
@@ -47,10 +51,13 @@
     max-width: 15rem
     &--small
       max-width: 14rem
+  &__buttons
+    margin-top: 69px
   &__button
     max-width: 28rem 
     margin: 0 auto
-    padding: 1.05rem 2rem
+    padding: 1.05rem 2.1rem
+    text-transform: uppercase
   &__input
     background-color: transparent !important
     border: none

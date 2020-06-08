@@ -45,7 +45,7 @@
             <!-- title -->
             <div class="content hero__content">
               <div class="content__buttons">
-                <a onclick="ym(117652555, 'reachGoal', 'request'); return true;" class="button button__primary hero__button open__button">Начать обучение</a>
+                <a class="button button__primary hero__button open__button">Начать обучение</a>
                 <a class="button button__secondary hero__button open__button">узнать подробнее</a>
               </div>
               <div class="content__text">Ваш собственный прибыльный торговый робот за <span class="content__text--sea">30 дней!</span></div>
@@ -101,35 +101,37 @@
             </div>
             <!-- create__text -->
             <div class="create__count">
-              <form class="form create__form">
-                <div class="create__input-group">
-                  <input type="number" name="userTool" class="input form__input create__input" placeholder="0">
-                  <div class="form__text create__form-text">Количество инструментов, по которым Вы торгуете</div>
+              <form action="send.php" method="POST" class="create__section-form">
+                <div class="form create__form">
+                  <div class="create__input-group">
+                    <input type="number" name="userTool" class="input form__input create__input" placeholder="0">
+                    <div class="form__text create__form-text">Количество инструментов, по которым Вы торгуете</div>
+                  </div>
+                  <div class="create__input-group create__input-group-small">
+                    <input type="number" name="userProfit" class="input form__input create__input" placeholder="0">
+                    <div class="form__text create__form-text create__form-text--small">Средняя месячная прибыль (%)</div>
+                  </div>
                 </div>
-                <div class="create__input-group create__input-group-small">
-                  <input type="number" name="userProfit" class="input form__input create__input" placeholder="0">
-                  <div class="form__text create__form-text create__form-text--small">Средняя месячная прибыль (%)</div>
+                <!-- /.form create__form -->
+                <div class="form create__form create__form1">
+                  <div class="create__input-group">
+                    <input type="number" name="userCount" class="input form__input create__input" placeholder="0">
+                    <div class="form__text create__form-text">Количество инструментов Вашего брокера</div>
+                  </div>
+                  <div class="create__input-group create__input-group-small">
+                    <input type="number" name="userSum" class="input form__input create__input" placeholder="0">
+                    <div class="form__text create__form-text create__form-text--small">Сумма депозита ($)</div>
+                  </div>
+                  <div class="content__buttons create__buttons">
+                    <button class="button button__primary create__button">Просчитать прибыль на 2016 год</button>
+                  </div>
                 </div>
-              </form>
-              <!-- /.form create__form -->
-              <form class="form create__form create__form1">
-                <div class="create__input-group">
-                  <input type="number" name="userTool" class="input form__input create__input" placeholder="0">
-                  <div class="form__text create__form-text">Количество инструментов Вашего брокера</div>
-                </div>
-                <div class="create__input-group create__input-group-small">
-                  <input type="number" name="userProfit" class="input form__input create__input" placeholder="0">
-                  <div class="form__text create__form-text create__form-text--small">Сумма депозита ($)</div>
-                </div>
-              </form>
-              <!-- /.form create__form -->
+                <!-- /.form create__form -->
+              </form> 
             </div>
             <!-- create__count -->
           </div>
           <!-- create__content -->
-          <div class="content__buttons">
-            <a class="button button__primary create__button open__button">Просчитать прибыль на 2016 год</a>
-          </div>
         </div>
         <!-- /.container -->
       </section>
@@ -920,25 +922,25 @@
               <!-- video-slide -->
             </div>
             <div>
-              <div class="reviews__video video" id="reviewsPlayerTwo">
+              <div class=" reviews__video1 video" id="reviewsPlayerTwo">
                 <script src="https://www.youtube.com/iframe_api"></script>
                 <img src="img/play.png" alt="play-icon" class="video__playTwo">
               </div>
               <div class="reviews__video-title">
-                <div class="item__content reviews__item-content">Алиса</div>
-                <div class="item__text reviews__item-text">Впервые с финансовыми рынками столкнулась в 17 лет, особенно интересовали портфельные инвестиции и риск-менеджмент. Первый заработок составил 12 тысяч долларов, правда, виртуальных.
+                <div class="item__content reviews__item-content">Дженнифер</div>
+                <div class="item__text reviews__item-text">Первый заработок составил 12 тысяч долларов, правда, виртуальных. Впервые с финансовыми рынками столкнулась в 17 лет, особенно интересовали портфельные инвестиции и риск-менеджмент. 
                 </div>
               </div>
               <!-- video-slide -->
             </div>
             <div>
-              <div class="reviews__video video" id="reviewsPlayerThree">
+              <div class=" reviews__video2 video" id="reviewsPlayerThree">
                 <script src="https://www.youtube.com/iframe_api"></script>
                 <img src="img/play.png" alt="play-icon" class="video__playThree">
               </div>
               <div class="reviews__video-title">
-                <div class="item__content reviews__item-content">Алиса</div>
-                <div class="item__text reviews__item-text">Впервые с финансовыми рынками столкнулась в 17 лет, особенно интересовали портфельные инвестиции и риск-менеджмент. Первый заработок составил 12 тысяч долларов, правда, виртуальных.
+                <div class="item__content reviews__item-content">Джейсон</div>
+                <div class="item__text reviews__item-text">Впервые с финансовыми рынками столкнулся в 17 лет, особенно интересовали портфельные инвестиции и риск-менеджмент. Первый заработок составил 12 тысяч долларов, правда, виртуальных.
                 </div>
               </div>
               <!-- video-slide -->
@@ -1110,6 +1112,7 @@
             <!-- /.footer__col -->
           </div>
           <!-- /.footer__wrapper -->
+          <div class="col__link creater">Создатель Glo Academy</div>
         </div>
         <!-- /.container -->
       </footer>
@@ -1149,6 +1152,18 @@
         <!-- /.pop-up__dialog -->
       </div>
       <!-- /.pop-up -->
+      <!-- /.pop-up -->
+      <div class="pop-up__create">
+        <div class="pop-up__dialog pop-up__create-dialog">
+          <button class="pop-up__create--close"></button>
+          <h3 class="pop-up__title pop-up__create-title">Ваша заявка принята</h3>
+          <h3 class="pop-up__title pop-up__create-text">Результат придет на ваш Email</h3>
+          <p class="pop-up__create--group">Подписывайтесь на нашу группу</p>
+          <a href="https://vk.com" class="pop-up__create--link">VKонтакте</a>
+        </div>
+        <!-- /.pop-up__dialog -->
+      </div>
+      
       <div class="button-up"><img src="img/up-arrow.svg" alt="Up" class="up"></div>
 
       <script src="js/jquery-3.5.1.min.js"></script>

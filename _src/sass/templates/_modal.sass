@@ -113,3 +113,51 @@
       font-size: 2rem
       &:hover
         text-decoration: underline
+  &__create
+    opacity: 0
+    visibility: hidden
+    position: fixed
+    z-index: 199
+    left: 0
+    top: 0
+    bottom: 0
+    right: 0
+    background-color: rgba($dark, 0.6)
+    width: 100%
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    &--visible
+      opacity: 1
+      visibility: visible
+    &-text
+      color: $light
+      padding-top: 0
+      margin-top: 0
+    &--close
+      position: absolute
+      right: 0
+      top: 0
+      width: 2rem
+      height: 2rem
+      background: transparent url('../img/close.svg') no-repeat center
+      border: none
+      margin: 0.857rem
+      cursor: pointer
+    &-title
+      padding-top: 3rem
+    &-dialog
+      display: flex
+      flex-direction: column
+      align-items: center
+    &--group
+      margin-top: 5rem
+      margin-bottom: 0
+      font-size: 1.15rem
+    &--link
+      text-decoration: none
+      color: $primary
+      font-size: 2rem
+      &:hover
+        text-decoration: underline

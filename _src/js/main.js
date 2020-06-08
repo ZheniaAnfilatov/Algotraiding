@@ -86,19 +86,22 @@ $(document).ready(function () {
 
   // закрывание окна
     closeBtn.on('click', function () {
-      popUp.toggleClass('pop-up--visible');
+      popUp.toggleClass('pop-up--visible'),
+      $('.pop-up')[0].reset();
   });
 
   // закрывание на esc
   $(document).keydown(function(e) {        
     if (e.keyCode == 27) {
-      popUp.removeClass('pop-up--visible');
+      popUp.removeClass('pop-up--visible'),
+      $('.pop-up')[0].reset();
     }
   });
    
   $(document).click(function (e) {
     if ($(e.target).is (popUp)) {
-      popUp.toggleClass('pop-up--visible');
+      popUp.toggleClass('pop-up--visible')
+      $('.pop-up')[0].reset();
     }
   });
 
@@ -167,7 +170,7 @@ $(document).ready(function () {
           $(form)[0].reset();
           popUp.removeClass('pop-up--visible');
           popUpThanks.addClass('pop-up__thanks--visible');
-          ym('117652555', 'reachGoal', 'request'); return true;
+          ym('64696480', 'reachGoal', 'request'); return true;
         }
       });
     }
@@ -233,7 +236,7 @@ $(document).ready(function () {
           $(form)[0].reset();
           popUp.removeClass('pop-up--visible');
           popUpThanks.addClass('pop-up__thanks--visible');
-          ym('117652555', 'reachGoal', 'request'); return true;
+          ym('64696480', 'reachGoal', 'request'); return true;
         }
       });
     }
@@ -281,9 +284,95 @@ $(document).ready(function () {
           $(form)[0].reset();
           popUp.removeClass('pop-up--visible');
           popUpThanks.addClass('pop-up__thanks--visible');
-          ym('117653131', 'reachGoal', 'request'); return true;
+          ym('64696480', 'reachGoal', 'request'); return true;
         }
       });
+    }
+  });
+
+// create form
+$('.create__section-form').validate({
+  errorClass: "invalid",
+  errorElement: "div",
+  ignore: ":disabled",
+  rules: {
+    userTool: {
+      required: true,
+      minlength: 1,
+      maxlength: 15
+    },
+    userProfit: {
+      required: true,
+      minlength: 1,
+      maxlength: 15
+    },
+    userCount: {
+      required: true,
+      minlength: 1,
+      maxlength: 15
+    },
+    userSum: {
+      required: true,
+      minlength: 1,
+      maxlength: 15
+    },
+  },
+    // сообщения
+  messages: {
+    userTool: {
+      required: "Заполните поле",
+      minlength: "Не меньше 1 символf",
+      maxlength: "Не больше 15 символов"
+    },
+    userProfit: {
+      required: "Заполните поле",
+      minlength: "Не меньше 1 символf",
+      maxlength: "Не больше 15 символов"
+    },
+    userCount: {
+      required: "Заполните поле",
+      minlength: "Не меньше 1 символf",
+      maxlength: "Не больше 15 символов"
+    },
+    userSum: {
+      required: "Заполните поле",
+      minlength: "Не меньше 1 символf",
+      maxlength: "Не больше 15 символов"
+    },
+  },
+  submitHandler: function(form) {
+    $.ajax({
+      type: "POST",
+      url: "send.php",
+      data: $('.create__section-form').serialize(),
+      success: function (response) {
+        $(form)[0].reset();
+        popUpCreate.addClass('pop-up__create--visible');
+      }
+    });
+  }
+});
+
+  // create pop-up
+  var popUpCreate = $('.pop-up__create');
+      closeCreate = $('.pop-up__create--close');
+
+   // закрывание на крестик
+   closeCreate.on('click', function () {
+    popUpCreate.toggleClass('pop-up__create--visible');
+  });
+
+   // закрывание на клик
+   $(document).click(function (e) {
+    if ($(e.target).is (popUpCreate)) {
+      popUpCreate.toggleClass('pop-up__create--visible');
+    }
+  });
+
+  // закрывание на клик
+  $(document).click(function (e) {
+    if ($(e.target).is (popUpCreate)) {
+      popUpCreate.toggleClass('pop-up__create--visible');
     }
   });
   
