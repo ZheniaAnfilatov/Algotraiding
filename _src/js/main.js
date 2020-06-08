@@ -87,21 +87,18 @@ $(document).ready(function () {
   // закрывание окна
     closeBtn.on('click', function () {
       popUp.toggleClass('pop-up--visible');
-      $('.pop-up')[0].reset();
   });
 
   // закрывание на esc
   $(document).keydown(function(e) {        
     if (e.keyCode == 27) {
       popUp.removeClass('pop-up--visible');
-      $('.pop-up')[0].reset();
     };
   });
    
   $(document).click(function (e) {
     if ($(e.target).is (popUp)) {
       popUp.toggleClass('pop-up--visible');
-      $('.pop-up')[0].reset();
     };
   });
 
