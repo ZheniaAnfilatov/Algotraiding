@@ -1,15 +1,11 @@
-@media screen and ( max-width: 1920px )
-  .hero
-    background-position: right 0px bottom -180px
-@media screen and ( max-width: 1640px )
-  .hero
-    background-position: right 0px bottom -70px
+// @media screen and ( max-width: 1920px )
+// @media screen and ( max-width: 1640px )
 @media screen and ( max-width: 1360px )
+  .hero
+    background-position: right -50px top 0px
   .menu__burger
     display: none
 @media screen and ( max-width: 1200px )
-  .hero
-    background-position: right -10px bottom -30px
   .logo
     &__name
       font-size: 1.3rem
@@ -139,7 +135,6 @@
 @media screen and ( max-width: 992px )
   .hero
     background: $light url('../img/hero-bg.png') no-repeat center / cover
-    background-position: right -232px bottom -30px
   .logo
     &__name
       font-size: 1.1rem
@@ -507,6 +502,8 @@
     padding-top: 170px
     max-height: 42.8rem
     padding-bottom: 110px
+    &__title
+      padding-top: 0
     &__main-title
       padding-top: 0
       font-size: 45px
@@ -1056,6 +1053,11 @@
     &__button
       font-size: 0.7rem
       margin: auto
+  .button-up
+    width: 35px
+    height: 35px
+  .up
+    width: 25px
 @media screen and ( max-width: 370px )
   .hero
     max-height: 34.8rem

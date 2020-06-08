@@ -5,6 +5,12 @@ $(document).ready(function () {
     $('.menu__burger,.menu__nav,.menu__burger--line').toggleClass('active');
     $('body').toggleClass('lock')
   });
+  
+  $('.nav__item').click(function(event) {
+    $('.menu__burger,.menu__nav,.menu__burger--line').removeClass('active');
+    $('body').toggleClass('lock')
+  });
+
 
   // слайдер benefit
   $('.benefit__slider').slick({
@@ -21,7 +27,7 @@ $(document).ready(function () {
   // слайдер reviews
   $('.reviews__slider').slick({
     arrows: false,
-    // autoplay: true,
+    autoplay: true,
   });
   
   // видео
